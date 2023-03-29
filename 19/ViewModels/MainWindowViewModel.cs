@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using CV19.ViewModel.Base;
-
+using CV19.ViewModels.Base;
 namespace CV19.ViewModels
 {
-    internal class MainWindowsViewMode : VIewModel
+    internal class MainWindowViewModel : ViewModel
     {
         #region Заголовок окна
         private string _Title = "Анализ статистики CV19";
@@ -13,6 +12,14 @@ namespace CV19.ViewModels
         {
             get => _Title;
             set => Set(ref _Title, value);
+        }
+        #endregion
+        #region Status : string - Статус программы
+        private string _Status = "Готов!";
+        public string Status
+        {
+            get => _Status;
+            set => Set(ref _Status, value);
         }
         #endregion
     }
