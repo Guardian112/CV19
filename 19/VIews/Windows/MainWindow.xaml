@@ -71,7 +71,7 @@
                         <GroupBox.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.MergedDictionaries>
-                                    <ResourceDictionary Source="../../Resources/DataTemplates/CompositeListItemsDataTemplates.xaml"/>
+                                    
                                 </ResourceDictionary.MergedDictionaries>
                             </ResourceDictionary>
                         </GroupBox.Resources>
@@ -85,7 +85,7 @@
                         <GroupBox.Resources>
                             <ResourceDictionary>
                                 <ResourceDictionary.MergedDictionaries>
-                                    <ResourceDictionary Source="../../Resources/DataTemplates/CompositeItemsControlDataTemplates.xaml"/>
+                                    
                                 </ResourceDictionary.MergedDictionaries>
                             </ResourceDictionary>
                         </GroupBox.Resources>
@@ -104,8 +104,7 @@
                     <GroupBox Grid.Column="0" Header="Группы">
                         <DockPanel>
                             <UniformGrid DockPanel.Dock="Bottom" Rows="1" Margin="0,3">
-                                <Button Content="Добавить" Padding="0,7" Style="{StaticResource CheckButtonStyle}" Command="{Binding CreateGroupCommand}"/>
-                                <Button Content="Удалить" Padding="0,7" Style="{StaticResource RemoveButtonStyle}" Command="{Binding DeleteGroupCommand}" CommandParameter="{Binding SelectedGroup}"/>
+                               
                             </UniformGrid>
                             <ListBox ItemsSource="{Binding Groups}" SelectedIndex="0"
                                      SelectedItem="{Binding SelectedGroup}">
@@ -168,7 +167,7 @@
                 <Button Margin="20,40" VerticalAlignment="Top" HorizontalAlignment="Left" 
                         Content="123" Padding="14,5" 
                         Opacity="1"
-                        Style="{StaticResource CustomButtonStyle}"
+                        
                         Width="110" RenderTransformOrigin="0.5,0.5">
                     <Button.Background>
                         <SolidColorBrush Color="White" x:Name="ButtonBrush"/>
